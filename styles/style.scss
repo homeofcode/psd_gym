@@ -1,10 +1,55 @@
 // GENERAL SETTINGS
 @import "setup";
 
+//VARIABLES
+
+$red: #C9352B;
+$black: #1A1B1C;
+$headerGrey: #646461;
+$blogGrey: #E5E6E7;
+
+//GENERAL STYLES
 html {
 	font-size: 62.5%;
 }
 
 body {
-	background: red;
+	font-size: 1.6rem;
+	font-family: 'Open Sans', sans-serif;
 }
+
+h1, h2, h3, h4 {
+	font-family: 'Hind', sans-serif;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+h1 {
+	font-size: 4.8rem;
+}
+
+h2 {
+	font-size: 3.6rem;
+}
+
+h3 {
+	font-size: 2.2rem;
+}
+
+h4 {
+	font-size: 1.5rem;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+.wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
