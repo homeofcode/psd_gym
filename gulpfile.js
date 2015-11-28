@@ -8,7 +8,7 @@ var gulp = require('gulp'),
 
 	//Styles Task
 	gulp.task('styles',function(){
-		return gulp.src('styles/*scss')
+		return gulp.src('styles/*.scss')
 			.pipe(sass().on('error',sass.logError))
 			.pipe(concat('style.css'))
 			.pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1'))
@@ -18,14 +18,14 @@ var gulp = require('gulp'),
 
 	//Watch Task
 	gulp.task('watch', function(){
-		gulp.watch('styles/*scss', ['styles']);
+		gulp.watch('styles/*.scss', ['styles']);
 		gulp.watch('scripts/*.js', ['js']);
 		gulp.watch("*.html", reload);
 	});
 
 	//Jshint Task
 	gulp.task('jshint',function(){
-		return gulp.src('js/*js')
+		return gulp.src('script/*.js')
 			.pipe(jshint())
 			.pipe(jshint.reporter('jshint-stylish'))
 			.pipe(reload({stream: true}));
