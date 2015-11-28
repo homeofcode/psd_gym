@@ -9,6 +9,7 @@ $red: #C9352B;
 $black: #1A1B1C;
 $headerGrey: #646461;
 $blogGrey: #E5E6E7;
+$white: #fff;
 
 //GENERAL STYLES
 html {
@@ -28,7 +29,7 @@ h1, h2, h3, h4 {
 
 h1 {
 	font-size: 4.8rem;
-	color:blue;
+	color:orange;
 }
 
 h2 {
@@ -49,6 +50,7 @@ a {
 
 ul {
 	list-style: none;
+	margin: 0;
 }
 
 .wrapper {
@@ -56,3 +58,35 @@ ul {
 	margin: 0 auto;
 }
 
+//NAVBAR
+.topNav {
+	display: flex;
+	justify-content: space-between;
+	background: $black;
+
+	a {
+		color: $white;
+		text-transform: uppercase;
+		font-size: 1.2rem;
+	}
+}
+
+.contactNav {
+	display: flex;
+	justify-content: space-between;
+	li {
+		padding: 1rem;
+		border-right: 1px solid $white;
+	}
+
+}
+
+.bottomNav {
+	background: $headerGrey;
+}
+
+.sidebar {
+	form {
+		display: flex;
+	}
+}
