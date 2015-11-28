@@ -1,0 +1,59 @@
+.flexRow {
+	display:flex;
+	display-direction:row;
+}
+
+.flexColumn {
+	display:flex;
+	display-direction:column;
+}
+
+h3 {
+	text-transform:uppercase;
+}
+
+.container {
+	max-width:1180px;
+	margin:0 auto;
+}
+
+
+
+h3.work {
+	color:blue;
+}
+
+
+
+
+
+.cB2 {
+	.cB2-left {
+		width:70%;
+		border:1px solid orange;
+	} .cB2-right {
+		width:30%;
+		h3{
+			display:block;
+			color:blue;
+		}ul.cB2-socialBox {
+			justify-content: space-between;
+			border:1px solid red;
+			margin:0;
+			padding:0;
+			li {
+				margin:0;
+				padding:0;
+			}
+		}
+	}
+}
+
+
+
+form {
+	label,
+	input {
+		width:100%
+	}
+}
